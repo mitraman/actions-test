@@ -27,11 +27,11 @@ jobs:
         run: echo Hello, world!
 
       - name: Install aws-iam-authenticator
-          run: |
-            echo Installing aws-iam-authenticator...
-            mkdir ~/aws
-            curl -o ~/aws/aws-iam-authenticator \
-            "https://amazon-eks.s3.us-west-2.amazonaws.com/\
-            1.16.8/2020-04-16/bin/linux/amd64/aws-iam-authenticator"
-            chmod +x ~/aws/aws-iam-authenticator
-            echo "::add-path::~/aws"
+        run: |
+          echo Installing aws-iam-authenticator...
+          mkdir ~/aws
+          curl -o ~/aws/aws-iam-authenticator \
+          "https://amazon-eks.s3.us-west-2.amazonaws.com/\
+          1.16.8/2020-04-16/bin/linux/amd64/aws-iam-authenticator"
+          chmod +x ~/aws/aws-iam-authenticator
+          echo "::add-path::~/aws"
